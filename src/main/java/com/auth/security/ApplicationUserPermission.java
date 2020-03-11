@@ -4,19 +4,18 @@ package com.auth.security;
  * Created by jyde on 3/10/2020.
  */
 public enum ApplicationUserPermission {
-
     STUDENT_READ("student:read"),
     STUDENT_WRITE("student:write"),
     COURSE_READ("course:read"),
     COURSE_WRITE("course:write");
 
-    private final String permissions;
+    private final String permission;
 
-    ApplicationUserPermission(String permissions) {
-        this.permissions = permissions;
+    ApplicationUserPermission(String permission) {
+        this.permission = permission;
     }
 
     public String getPermission() {
-        return permissions;
+        return permission;
     }
 }
